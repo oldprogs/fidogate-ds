@@ -1,5 +1,5 @@
 
-  $Id: README.ru,v 1.5 2003/10/31 18:55:41 rusfidogate Exp $
+  $Id: README.ru,v 1.6 2003/11/05 18:41:34 rusfidogate Exp $
 
 
    Copyright (C) 2001-2002, Dmitry Fedotov
@@ -105,7 +105,12 @@ co -r dp fidogate
 
 для fidogate-ds:
 
+STABLE:
 cvs -z3 -d:pserver:anonymous@cvs.rusfidogate.sourceforge.net:/cvsroot/rusfidogate
+co fidogate-sta
+
+DEVELOPMENT:
+cvs -z3 -d:pserver:anonymous@cvs.rusfidogate.sourceforge.net:/cvsroot/rusfidogate              
 co fidogate
 
     Также последнюю официальную версию fidogate можно взять на сайтах:
