@@ -14,7 +14,7 @@
 @SET_MAKE@
 
 #
-#    $Id: Makefile.in,v 1.12 2003/12/29 02:27:12 rusfidogate Exp $
+#    $Id: Makefile.in,v 1.13 2004/01/27 01:32:23 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE src/common/
 #
@@ -116,6 +116,7 @@ am__include = @am__include@
 am__quote = @am__quote@
 btbasedir = @btbasedir@
 install_sh = @install_sh@
+netmaildir = @netmaildir@
 vardir = @vardir@
 
 LIBTOOL_DEPS = @LIBTOOL_DEPS@

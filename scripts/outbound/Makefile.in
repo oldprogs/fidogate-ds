@@ -15,7 +15,7 @@
 
 #:ts=8
 #
-#    $Id: Makefile.in,v 1.12 2003/12/29 02:27:10 rusfidogate Exp $
+#    $Id: Makefile.in,v 1.13 2004/01/27 01:32:23 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE scripts/outbound/
 #
@@ -118,6 +118,7 @@ am__include = @am__include@
 am__quote = @am__quote@
 btbasedir = @btbasedir@
 install_sh = @install_sh@
+netmaildir = @netmaildir@
 vardir = @vardir@
 
 bin_SCRIPTS = out-attach \

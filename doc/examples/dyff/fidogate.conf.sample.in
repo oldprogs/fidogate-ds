@@ -1,7 +1,7 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.6 2004/01/23 02:49:25 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.7 2004/01/27 01:32:23 rusfidogate Exp $
 #
-# NEW!!! (FIDOGATE 5.0.0) single common config file
+# NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
 # dyff example config
 #
@@ -19,10 +19,11 @@ VARDIR		<VARDIR>
 LOCKDIR		<LOCKDIR>
 SPOOLDIR	<SPOOLDIR>
 BTBASEDIR	<BTBASEDIR>
+NETMAILDIR	<NETMAILDIR>
 
 INBOUND		%B/in
 PINBOUND	%B/pin
-#UUINBOUND	%B/uuin
+#UUINBOUND      %B/uuin
 
 # Config files		
 ACL		%C/acl

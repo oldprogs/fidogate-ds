@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftn2rfc.c,v 1.8 2004/01/23 03:02:59 rusfidogate Exp $
+ * $Id: ftn2rfc.c,v 1.9 2004/01/27 01:32:23 rusfidogate Exp $
  *
  * Convert FTN mail packets to RFC mail and news batches
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"ftn2rfc"
-#define VERSION 	"$Revision: 1.8 $"
+#define VERSION 	"$Revision: 1.9 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -1150,7 +1150,7 @@ int unpack(FILE *pkt_file, Packet *pkt)
 	else
 	{
 	    if(area)
-#ifndef NEW_COMMENT_TO
+#ifdef OLD_COMMENT_TO
 		to_line = s_printf("(%s)", addr_to.real);
 #else
 		to_line = s_printf("%s", addr_to.real);
@@ -1171,11 +1171,16 @@ int unpack(FILE *pkt_file, Packet *pkt)
 	    id_line = s_msgid_convert_origid(p);
 	else if(!no_rfc_kludge)
 	{
-	if( (p = kludge_get(&body.kludge, "Message-ID", NULL)) )
+	 if( (p = kludge_get(&body.kludge, "Message-ID", NULL)) )
 	    id_line = s_msgid_convert_origid(p);
-	else if( (p = kludge_get(&body.kludge, "RFC-Message-ID", NULL)) )
+	 else if( (p = kludge_get(&body.kludge, "RFC-Message-ID", NULL)) )
 	    id_line = s_msgid_convert_origid(p);
 	}
+#ifdef RECODE_ALL_RFC
+	if( (p = kludge_get(&body.kludge, "RFC-References", NULL)) )
+	    ref_line = p;
+#endif
+
 	if(!id_line)
 	{
 	    int id_zone;
