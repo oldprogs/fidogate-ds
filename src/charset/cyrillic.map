@@ -1,5 +1,5 @@
 #
-# $Id: cyrillic.map,v 1.4 2003/12/02 14:34:59 rusfidogate Exp $
+# $Id: cyrillic.map,v 1.5 2003/12/03 15:23:58 rusfidogate Exp $
 #
 # Character set mapping table (to be compiled by charsetc)
 #
@@ -1032,8 +1032,8 @@ map     \xAE    \x20
 map     \xAF    \xF4
 map     \xB0    \xF8
 map     \xB1    \x20
-map     \xB2    \x20
-map     \xB3    \x20
+map     \xB2    \x49
+map     \xB3    \x69
 map     \xB4    \x20
 map     \xB5    \x20
 map     \xB6    \x20
