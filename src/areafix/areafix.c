@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: areafix.c,v 1.2 2003/11/05 18:41:34 rusfidogate Exp $
+ * $Id: areafix.c,v 1.3 2003/12/02 14:34:59 rusfidogate Exp $
  *
  * Common Areafix functions
  *
@@ -148,7 +148,7 @@ void areafix_tlprintf(const char *fmt, ...)
 
     va_start(args, fmt);
     
-#ifdef HAVE_SNPRINTF    
+#ifndef HAVE_SPRINTF    
     n = vsnprintf(buf, sizeof(buf), fmt, args);
 #else
     n = vsprintf(buf, fmt, args);

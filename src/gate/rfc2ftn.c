@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: rfc2ftn.c,v 1.1 2003/09/23 17:43:43 rusfidogate Exp $
+ * $Id: rfc2ftn.c,v 1.2 2003/12/02 14:34:59 rusfidogate Exp $
  *
  * Read mail or news from standard input and convert it to a FIDO packet.
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"rfc2ftn"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.2 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -1785,7 +1785,7 @@ int print_origin(FILE *fp, char *origin, Node *node_from)
 	/* Max. allowed length of origin line is 79 (80 - 1) chars, 3
 	 * are used by " ()".  */
 	len = 80 - strlen(bufa) - 3;
-	
+
 	/* Add origin text */
 	str_append(buf, len, origin);
 	/* Add address */
