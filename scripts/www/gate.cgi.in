@@ -136,7 +136,7 @@ for (@DIRS) {
 print
   $q->hr, "\n",
   $q->p, "\n",
-  '<font size=-2>FIDOGATE $Id: gate.cgi.in,v 1.3 2004/10/19 00:29:59 anray Exp $ <br>',
+  '<font size=-2>FIDOGATE $Id: gate.cgi.in,v 1.4 2004/10/29 19:07:45 anray Exp $ <br>',
   '&copy; Copyright 1994-2004',
   '<a href="mailto:anray@users.sourceforge.net">Andrey Slusar</a></font>',
   $q->end_html, "\n";
@@ -192,8 +192,7 @@ sub my_ps_news {
 #  news     (  580  0.0  0.2  5604  136 )?        S    10:18   0:01 /usr/bin/innd -p5
 #  news     (  584  0.0  0.1  2536  100 )?        S    10:18   0:00 /usr/bin/actived
 #/^.........(...........................)......*?([A-Z].*\d )( *\d+:\d\d).(.+)$/ );
-	next if(! /^.........(...........................)......*?([A-Z].*\d )(
-*\d+:\d\d).(.+)$/ );
+	next if(! /^.........(...........................)......*?([A-Z].*\d )( *\d+:\d\d).(.+)$/ );
 	$x  = "$1 $2";
 	$x1 = $3;
 	$x2 = $4;

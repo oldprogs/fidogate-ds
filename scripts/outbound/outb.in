@@ -1,8 +1,7 @@
 #!<SHELL>
 #
-# $Id: outb.in,v 1.1 2003/09/23 17:37:27 rusfidogate Exp $
+# $Id: outb.in,v 1.2 2004/10/29 19:07:45 anray Exp $
 #
 # Pager wrapper for out-ls
 #
 exec <BINDIR>/out-ls | ${PAGER-less}
-

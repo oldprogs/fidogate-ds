@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.16 2004/10/15 18:20:03 anray Exp $
+# $Id: fidogate.conf.sample.in,v 1.17 2004/10/29 19:07:44 anray Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -748,6 +748,10 @@ Regex1stLine  ^[ 	]*([^>|].*) (writes|wrote|schreibt|schrieb|пишет):$
 # Line length for formatting long paragraphs in Fido messages
 # (replaces old MAX_LINELEN from config.h)
 MessageLineLength	90
+
+# ftn2rfc gate ^ARFC kludges to headers
+#
+#GateRfcKludge
 
 # Carbon group and name for search in "To:" field to put into this newsgroup
 #
