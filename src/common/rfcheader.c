@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: rfcheader.c,v 1.2 2004/01/29 20:19:07 rusfidogate Exp $
+ * $Id: rfcheader.c,v 1.3 2004/02/24 22:27:24 dsas Exp $
  *
  * Functions to process RFC822 header lines from messages
  *
@@ -194,7 +194,11 @@ void header_read(FILE *file)
 	    break;
 	strip_crlf(buf);
 	if(is_blank(buf[0]))
-	    BUF_APPEND(queue,buf);
+	{
+	    char *p;
+	    for(p = buf; *p && is_blank(*p); ++p);
+	    BUF_APPEND(queue,p);
+	}
 	else
 	{
 	    if(!first)
