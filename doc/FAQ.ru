@@ -1,5 +1,5 @@
 
-    $Id: FAQ.ru,v 1.23 2004/10/29 19:07:44 anray Exp $
+    $Id: FAQ.ru,v 5.2 2004/11/23 00:50:36 anray Exp $
 
                     Configuration mini-faq
 

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: rfcaddr.c,v 1.1 2003/09/23 17:42:21 rusfidogate Exp $
+ * $Id: rfcaddr.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * RFCAddr struct handling
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: areas.c,v 1.1 2003/09/23 17:40:20 rusfidogate Exp $
+ * $Id: areas.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * Area <-> newsgroups conversion
  *

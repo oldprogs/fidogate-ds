@@ -1,11 +1,11 @@
 #!<PERL5>
 #
-# $Id: areasbbssync.in,v 1.1 2003/09/23 17:36:35 rusfidogate Exp $
+# $Id: areasbbssync.in,v 5.2 2004/11/23 00:50:39 anray Exp $
 #
 # Syncronize groups in active (INN) and areas.bbs (FIDOGATE)
 #
 
-$VERSION = '$Revision: 1.1 $ ';
+$VERSION = '$Revision: 5.2 $ ';
 $PROGRAM = "areasbbssync";
 
 

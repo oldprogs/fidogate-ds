@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: active.c,v 1.3 2004/07/10 19:43:39 anray Exp $
+ * $Id: active.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * Active group
  *

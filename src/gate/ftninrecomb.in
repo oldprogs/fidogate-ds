@@ -1,6 +1,6 @@
 #!<PERL5>
 #
-# $Id: ftninrecomb.in,v 1.1 2003/09/23 17:43:16 rusfidogate Exp $
+# $Id: ftninrecomb.in,v 5.2 2004/11/23 00:50:41 anray Exp $
 #
 # Recombine split mail and news messages.
 #

@@ -1,12 +1,12 @@
 #
-# $Id: redhat6-orodruin.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $
+# $Id: redhat6-orodruin.mc,v 5.2 2004/11/23 00:50:37 anray Exp $
 #
 # orodruin.Fido.DE
 #
 
 include(`../m4/cf.m4')
 
-VERSIONID(`$Id: redhat6-orodruin.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $')
+VERSIONID(`$Id: redhat6-orodruin.mc,v 5.2 2004/11/23 00:50:37 anray Exp $')
 
 dnl #
 dnl # Configuration

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: xalloc.c,v 1.2 2004/11/18 23:56:25 anray Exp $
+ * $Id: xalloc.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * Safe memory allocation functions
  *

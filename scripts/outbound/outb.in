@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: outb.in,v 1.2 2004/10/29 19:07:45 anray Exp $
+# $Id: outb.in,v 5.2 2004/11/23 00:50:39 anray Exp $
 #
 # Pager wrapper for out-ls
 #

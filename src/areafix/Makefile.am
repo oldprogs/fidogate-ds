@@ -1,6 +1,6 @@
 #:ts=8
 #
-#    $Id: Makefile.am,v 1.2 2003/10/18 16:10:32 rusfidogate Exp $
+#    $Id: Makefile.am,v 5.2 2004/11/23 00:50:39 anray Exp $
 #
 #    Makefile for FIDOGATE src/areafix/
 #

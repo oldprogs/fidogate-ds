@@ -1,5 +1,5 @@
 
-    $Id: FAQ_Config.ru,v 1.2 2004/10/15 18:20:03 anray Exp $
+    $Id: FAQ_Config.ru,v 5.2 2004/11/23 00:50:36 anray Exp $
 
 Создатель Andrey Slusar 2:467/126, anray@users.sourceforge.net
 

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: binkley.c,v 1.3 2004/06/30 17:34:49 rusfidogate Exp $
+ * $Id: binkley.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * BinkleyTerm-style outbound directory functions
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: structs.h,v 1.2 2004/07/10 19:43:39 anray Exp $
+ * $Id: structs.h,v 5.2 2004/11/23 00:50:41 anray Exp $
  *
  * An assortment of FIDOGATE data structure definitions
  *

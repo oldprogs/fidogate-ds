@@ -1,6 +1,6 @@
 #:ts=8
 #
-#    $Id: Makefile.am,v 1.3 2004/10/15 18:20:03 anray Exp $
+#    $Id: Makefile.am,v 5.2 2004/11/23 00:50:39 anray Exp $
 #
 #    Makefile for FIDOGATE src/charset/
 #

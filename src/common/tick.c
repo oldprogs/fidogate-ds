@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: tick.c,v 1.3 2004/08/02 18:35:06 anray Exp $
+ * $Id: tick.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * TIC file processing
  *

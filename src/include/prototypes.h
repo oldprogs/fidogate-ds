@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: prototypes.h,v 1.9 2004/11/18 23:56:25 anray Exp $
+ * $Id: prototypes.h,v 5.2 2004/11/23 00:50:41 anray Exp $
  *
  * Prototypes for functions in libfidogate.a
  *

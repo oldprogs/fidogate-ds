@@ -1,12 +1,12 @@
 #:ts=8
 #
-# $Id: morannon.mc,v 1.1 2003/09/23 17:33:05 rusfidogate Exp $
+# $Id: morannon.mc,v 5.2 2004/11/23 00:50:37 anray Exp $
 #
 # Fido.DE domain gateway morannon.fido.de sendmail V8 configuration
 #
 
 include(`../m4/cf.m4')
-VERSIONID(`$Id: morannon.mc,v 1.1 2003/09/23 17:33:05 rusfidogate Exp $')
+VERSIONID(`$Id: morannon.mc,v 5.2 2004/11/23 00:50:37 anray Exp $')
 OSTYPE(linux)
 
 define(`confCF_VERSION', `morannon-4.5')

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: flo.c,v 1.2 2004/03/01 19:00:53 rusfidogate Exp $
+ * $Id: flo.c,v 5.2 2004/11/23 00:50:40 anray Exp $
  *
  * Functions for handling BinkleyTerm-style FLO files
  *
