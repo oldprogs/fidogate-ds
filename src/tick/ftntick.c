@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntick.c,v 1.9 2004/02/10 12:30:57 dsas Exp $
+ * $Id: ftntick.c,v 1.10 2004/02/11 10:44:47 dsas Exp $
  *
  * Process incoming TIC files
  *
@@ -37,7 +37,7 @@
 
 
 #define PROGRAM		"ftntick"
-#define VERSION		"$Revision: 1.9 $"
+#define VERSION		"$Revision: 1.10 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -82,7 +82,7 @@ void	short_usage		(void);
 void	usage			(void);
 short	check_pass		(Tick *, short);
 int	filefix_check_forbidden_area(char *);
-int	cmd_new_int			(Node *, char *, char *);
+int	cmd_new_int		(Node *, char *, char *);
 void	areafix_init		(int);
 int	areafix_auth_check	(Node *, char *, char);
 char	*areafix_name		(void);
