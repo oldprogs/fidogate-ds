@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftninpost.c,v 1.4 2003/09/25 04:48:34 rusfidogate Exp $
+ * $Id: ftninpost.c,v 1.5 2004/02/25 18:02:09 rusfidogate Exp $
  *
  * Processing inbound packets
  *
@@ -34,7 +34,7 @@
 
 
 #define PROGRAM 	"ftninpost"
-#define VERSION 	"$Revision: 1.4 $"
+#define VERSION 	"$Revision: 1.5 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 typedef struct split_t {
@@ -227,8 +227,8 @@ int do_dir(char *cdir, int mode)
                 case 1:
 	    	    if( ( p = strstr( ftnin_sendmail, " -f" ) ) ) {
     			for( p+=3; p && *p == ' '; p++ );
-			if( *p == '%' && p[1] == 's' ) {
-
+			if( *p == '%' && p[1] == 's' )
+			{
 			    fp = fopen( rfc_file, "r" );
 			    if( !fp )
 		    		break;
@@ -236,9 +236,12 @@ int do_dir(char *cdir, int mode)
                 	    fclose( fp );
 			    if( !p )
 		    		break;
-			    if( strncmp( p, "From ", 5 ) ) {
+			    if( strncmp( p, "From ", 5 ) )
+			    {
 		    		debug( 9, "WARNING: \"From\" string not found" );
-                	    } else {
+                	    }
+			    else
+			    {
 				p = xstrtok( p+5, " \t" );
 				str_printf( buf, sizeof(buf), ftnin_sendmail, p ); 
 			    }
@@ -258,13 +261,13 @@ int do_dir(char *cdir, int mode)
 		    debug( 1, "unknow mode %d", mode );
 		    break;
 	    }
-	    if( pr == TRUE ) {
-	  
+	    if( pr == TRUE )
+	    {
 		debug( 8, "exec: %s", p );
 		freopen( rfc_file, R_MODE, stdin );
 		ret = system( p );
 		fclose( stdin );
-		if( ret != 0 )
+		if(ret)
 		{
 		    char bad[MAXPATH];
 		    log( "$WARNING: %s returned non-zero status", p );

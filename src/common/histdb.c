@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: histdb.c,v 1.6 2004/02/24 18:07:29 rusfidogate Exp $
+ * $Id: histdb.c,v 1.7 2004/02/25 18:02:09 rusfidogate Exp $
  *
  * MSGID history functions and dupe checking
  *
@@ -201,7 +201,8 @@ short int hi_write_dbc(char *rfc_msgid, char *fido_msgid, short int dont_flush)
     key.dsize = strlen(fido_msgid) + 1;
     val.dptr  = (char *)&offset;		/* Value */
     val.dsize = sizeof offset;
-    if (dbzstore(key, val) < 0) {
+    if (dbzstore(key, val) < 0)
+    {
 	log("ERROR: dbzstore of record for DBC MSGID history failed");
 	return ERROR;
     }
