@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.10 2004/05/08 13:01:09 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.11 2004/05/28 18:16:32 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -433,7 +433,7 @@ AutoCreateFileechoDontCheckPassword
 # Keys for put to fareas.bbs when fileecho is autocreated
 AutoCreateFileechoLine -# -s S -t 0
 
-# Patch to create fileechos directores
+# Path to create fileechos directores
 AutoCreateFechoPath /home/ftp/fileecho
 
 # Filebox style directory. In it create hardlinks to our downlinks
