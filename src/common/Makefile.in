@@ -14,7 +14,7 @@
 @SET_MAKE@
 
 #
-#    $Id: Makefile.in,v 1.16 2004/02/02 19:48:09 rusfidogate Exp $
+#    $Id: Makefile.in,v 1.17 2004/02/18 19:17:03 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE src/common/
 #

@@ -1,6 +1,6 @@
 #
 #
-# $Id: Makefile.am,v 1.2 2003/10/27 16:56:23 rusfidogate Exp $
+# $Id: Makefile.am,v 1.3 2004/02/18 19:17:03 rusfidogate Exp $
 #
 # Makefile FIDOGATE TOPDIR
 #
@@ -38,7 +38,7 @@ FDESTDIR	= $(DEFAULT_V_CONFIGDIR) \
 		  $(DEFAULT_V_INBOUND)/tmpunpack \
 		  $(DEFAULT_V_PINBOUND) \
 		  $(DEFAULT_V_PINBOUND)/bad \
-		  $(DEFAULT_V_PINBOUND)/tmpunpack 
+		  $(DEFAULT_V_PINBOUND)/tmpunpack
 
 install-am: installdirs
 
