@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: areafix.c,v 1.3 2003/12/02 14:34:59 rusfidogate Exp $
+ * $Id: areafix.c,v 1.4 2003/12/29 02:27:11 rusfidogate Exp $
  *
  * Common Areafix functions
  *
@@ -822,9 +822,9 @@ int cmd_new(Node *node, char *line, char *dwnl, int inter)
     int i, ignore_prl = FALSE;
     char *autocreate_fecho_path=NULL;
 
-    if(!authorized_new || !authorized)
+    if(! (authorized_new || (authorized_fwd && inter))|| !authorized)
     {
-	areafix_printf("Command NEW: not authorized.");
+	areafix_printf("Command not authorized.");
 	return OK;
     }
 
