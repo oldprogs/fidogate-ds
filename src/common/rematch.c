@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: rematch.c,v 1.3 2004/11/18 23:56:25 anray Exp $
+ * $Id: rematch.c,v 1.4 2004/11/22 23:09:40 anray Exp $
  *
  * Regular expression (POSIX functions) handling for FIDOGATE
  *
@@ -34,9 +34,11 @@
 
 
 #ifdef HAS_POSIX_REGEX /*******************************************************/
-
+#ifdef HAVE_RX
+#include <rxposix.h>
+#else
 #include <regex.h>
-
+#endif
 
 
 /*
