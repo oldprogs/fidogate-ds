@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftnroute.c,v 1.5 2004/07/22 22:53:40 anray Exp $
+ * $Id: ftnroute.c,v 1.6 2004/07/29 00:53:33 anray Exp $
  *
  * Route FTN NetMail/EchoMail
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"ftnroute"
-#define VERSION 	"$Revision: 1.5 $"
+#define VERSION 	"$Revision: 1.6 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -1146,7 +1146,7 @@ int main(int argc, char **argv)
 			break;
 		    }
 	    	}
-		dir_close(buf);
+		dir_close();
 		if(ret == EXIT_ERROR)
 		    break;
 	    }
