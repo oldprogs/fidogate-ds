@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 dnl
 dnl # Copy revision into the `configure' script
-AC_REVISION([$Id: configure.in,v 1.19 2004/07/19 23:55:33 anray Exp $])
+AC_REVISION([$Id: configure.in,v 1.20 2004/07/20 18:59:46 anray Exp $])
 dnl # Minimum Autoconf version required.
 AC_PREREQ(2.53)
 dnl # No comments...
@@ -410,7 +410,7 @@ AC_MSG_ERROR([PLEASE INSTALL INN OR SET PATH TO innconfval DIR; use --with-newsb
     fi
     
     if $newsbindir/innconfval -v 2>&1 </dev/null | egrep 2\.\[3\|4] > /dev/null; then
-      eval `$newsbindir/innconfval -s|grep -e PATHNEWS -e PATHBIN`
+      eval `$newsbindir/innconfval -s|grep -e PATHNEWS -e PATHBIN -e PATHOUTGOING`
       NEWSLIBDIR=${PATHNEWS}
     else
       NEWSLIBDIR=$newsbindir
