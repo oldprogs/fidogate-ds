@@ -1,5 +1,5 @@
 
-		Установка FIDOGATE ver 1.3
+    $Id: FAQ.ru,v 1.14 2004/05/27 00:30:18 rusfidogate Exp $
 
 Создатель Andrey Slusar 2:467/126, vasallia at ukr.net
 
@@ -308,7 +308,7 @@ Subject: GATE-PORT
   /**************************************************************************
   * FIDOGATE --- Gateway software UNIX Mail/News <-> FIDO NetMail/EchoMail
   *
-  * $Id: FAQ.ru,v 1.13 2004/05/08 13:06:35 rusfidogate Exp $
+  * $Id: FAQ.ru,v 1.14 2004/05/27 00:30:18 rusfidogate Exp $
   *
   * Global version number, patch level
   ***************************************************************************
