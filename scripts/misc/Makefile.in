@@ -15,7 +15,7 @@
 
 #:ts=8
 #
-#    $Id: Makefile.in,v 1.9 2003/10/31 18:55:41 rusfidogate Exp $
+#    $Id: Makefile.in,v 1.10 2003/11/25 18:10:27 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE scripts/misc/
 #

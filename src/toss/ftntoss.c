@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntoss.c,v 1.2 2003/10/27 16:56:24 rusfidogate Exp $
+ * $Id: ftntoss.c,v 1.3 2003/11/25 18:10:27 rusfidogate Exp $
  *
  * Toss FTN NetMail/EchoMail
  *
@@ -40,7 +40,7 @@
 
 
 #define PROGRAM 	"ftntoss"
-#define VERSION 	"$Revision: 1.2 $"
+#define VERSION 	"$Revision: 1.3 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -1718,7 +1718,7 @@ int unpack(FILE *pkt_file, Packet *pkt)
 		if(do_netmail(pkt, &msg, &body, FALSE) == ERROR)
 		    return ERROR;
 		BUF_COPY (old_subject, msg.subject);
-		str_printf (msg.subject, MSG_MAXSUBJ, "Forwarded message from %s to %s: %s",
+		str_printf (msg.subject, MSG_MAXSUBJ, "[FWD] from %s to %s: %s",
 			    znfp1(&msg.node_from),
 			    znfp2(&msg.node_to),
 			    old_subject);
