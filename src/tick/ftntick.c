@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntick.c,v 1.6 2003/11/01 15:29:05 rusfidogate Exp $
+ * $Id: ftntick.c,v 1.7 2004/01/27 18:17:47 rusfidogate Exp $
  *
  * Process incoming TIC files
  *
@@ -37,7 +37,7 @@
 
 
 #define PROGRAM		"ftntick"
-#define VERSION		"$Revision: 1.6 $"
+#define VERSION		"$Revision: 1.7 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -663,9 +663,10 @@ int process_tic(Tick *tic)
                 {
                     sprintf(buffer, tick_action, new_name);
                     debug(8, "exec: %s", buffer);
-	            if( !(ret = run_system(buffer)) )
+		    if (ret = run_system(buffer))
                         log("exec: %s failed, exit code = %d", buffer, ret);
-                    xfree(str_save);
+                    else log("exec: %s complete", buffer);
+		    xfree(str_save);
                     break;
 	        }
             }
