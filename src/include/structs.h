@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: structs.h,v 1.1 2003/09/23 17:44:00 rusfidogate Exp $
+ * $Id: structs.h,v 1.2 2004/07/10 19:43:39 anray Exp $
  *
  * An assortment of FIDOGATE data structure definitions
  *
@@ -150,8 +150,10 @@ AreasBBS;
 typedef struct st_group {
     struct st_group *next;
     char *group;
+#ifndef SN
     int art_h;
     int art_l;
+#endif /* SN */
     char *flag;
 } Active;
 #endif /* ACTIVE_LOOKUP */

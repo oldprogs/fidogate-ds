@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftn2rfc.c,v 1.24 2004/07/05 17:21:19 anray Exp $
+ * $Id: ftn2rfc.c,v 1.25 2004/07/10 19:43:39 anray Exp $
  *
  * Convert FTN mail packets to RFC mail and news batches
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"ftn2rfc"
-#define VERSION 	"$Revision: 1.24 $"
+#define VERSION 	"$Revision: 1.25 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -231,7 +231,9 @@ Area *news_msg(char *line, Node *to)
 	    debug(7, "Found: %s %s Z%d", pa->area, pa->group, pa->zone);
 
 #ifdef ACTIVE_LOOKUP
+#ifndef SN
 	    active_init();
+#endif
 	    pg = active_lookup(pa->group);
 	    if(pg)
 	    {

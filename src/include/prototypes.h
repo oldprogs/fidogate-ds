@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: prototypes.h,v 1.7 2004/03/02 18:32:39 rusfidogate Exp $
+ * $Id: prototypes.h,v 1.8 2004/07/10 19:43:39 anray Exp $
  *
  * Prototypes for functions in libfidogate.a
  *
@@ -61,7 +61,9 @@ int     ftnacl_search            ( Node *, char *, char, char );
 
 /* active.c */
 #ifdef ACTIVE_LOOKUP
+#ifndef SN
 short	active_init		(void);
+#endif
 Active *active_lookup		(char *);
 #endif /* ACTIVE_LOOKUP */
 

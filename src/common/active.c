@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: active.c,v 1.2 2004/03/01 19:00:53 rusfidogate Exp $
+ * $Id: active.c,v 1.3 2004/07/10 19:43:39 anray Exp $
  *
  * Active group
  *
@@ -33,6 +33,7 @@
 
 
 #ifdef ACTIVE_LOOKUP
+#ifndef SN
 /*
  * Prototypes
  */
@@ -113,8 +114,8 @@ short active_init( void ) {
 }
 
 
-Active *active_lookup( char *group ) {
-
+Active *active_lookup( char *group )
+{
     Active *p;
     /*
      * Inefficient search, but order is important!
@@ -125,4 +126,26 @@ Active *active_lookup( char *group ) {
     }
     return FALSE;
 }
+#else
+Active *active_lookup( char *group )
+{
+    Active *p;
+    char sndir[MAXPATH];
+
+    BUF_COPY3(sndir, cf_p_newsspooldir(), "/", group);
+    if( check_access( sndir, CHECK_DIR ) == TRUE )
+    {
+	p = ( Active * )xmalloc( sizeof( Active ) );
+	p->next = NULL;
+	p->group = strsave ( group );
+	BUF_APPEND(sndir, "/.outgoing");
+	if( check_access( sndir, CHECK_DIR ) == TRUE )
+	    p->flag = "y";
+	else
+	    p->flag = "n";
+	return p;
+    }
+    return FALSE;
+}
+#endif /* SN */
 #endif /* ACTIVE_LOOKUP */
