@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftnafutil.c,v 1.1 2003/09/23 17:38:23 rusfidogate Exp $
+ * $Id: ftnafutil.c,v 1.2 2003/10/01 17:35:59 rusfidogate Exp $
  *
  * Utility program for Areafix.
  *
@@ -36,7 +36,7 @@
 
 
 #define PROGRAM		"ftnafutil"
-#define VERSION		"$Revision: 1.1 $"
+#define VERSION		"$Revision: 1.2 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -217,9 +217,9 @@ int do_areasbbs(int cmd)
 	switch(cmd)
 	{
 	case DO_DELETE:
-	    if(!uplink)
+	    if(!uplink || areasbbs_isstate(state, 'U') )
 	    {
-		log("area %s: no uplink, deleting", p->area);
+		log("area %s: no uplink or unsubscribe, deleting", p->area);
 		if(!n_flag) 
 		{
 		    areasbbs_remove(p, pl);
