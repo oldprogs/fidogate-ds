@@ -15,7 +15,7 @@
 
 #:ts=8
 #
-#    $Id: Makefile.in,v 1.23 2004/02/27 18:28:49 rusfidogate Exp $
+#    $Id: Makefile.in,v 1.24 2004/03/01 19:00:53 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE src/charset/
 #
