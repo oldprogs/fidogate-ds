@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftn2rfc.c,v 1.25 2004/07/10 19:43:39 anray Exp $
+ * $Id: ftn2rfc.c,v 1.26 2004/07/15 18:56:49 anray Exp $
  *
  * Convert FTN mail packets to RFC mail and news batches
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"ftn2rfc"
-#define VERSION 	"$Revision: 1.25 $"
+#define VERSION 	"$Revision: 1.26 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -1629,7 +1629,8 @@ carbon:
 	tl_appendf(&theader, "\n");
 
 	/* Write header and message body to output file */
-	if(area) {
+	if(area)
+	{
 	    if(!mail_file('n'))
 		if(mail_open('n') == ERROR)
 		{
@@ -1638,8 +1639,11 @@ carbon:
 		}
 
 		/* News batch */
+	    if(!single_articles)
+	    {
 		fprintf(mail_file('n'), "#! rnews %ld\n",
 			tl_size(&theader) + tl_size(&tbody) );
+	    }
 	    tl_print(&theader, mail_file('n'));
 	    tl_print(&tbody,   mail_file('n'));
 
