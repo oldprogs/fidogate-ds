@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: areafix.c,v 1.16 2004/06/11 03:04:09 rusfidogate Exp $
+ * $Id: areafix.c,v 1.17 2004/06/11 03:12:42 rusfidogate Exp $
  *
  * Common Areafix functions
  *
@@ -410,10 +410,10 @@ int areafix_auth_check(Node *node, char *passwd, int checkpass)
 	debug(3, "authorized for NEW command");
 	authorized_new = TRUE;
     }
-    if(strchr(authorized_key, '&'))                                                            
-    {                                                                                          
-        debug(3, "authorized for FORWARD request");                                                
-        authorized_fwd = TRUE;                                                                 
+    if(strchr(authorized_key, '&'))
+    {
+        debug(3, "authorized for FORWARD request");
+        authorized_fwd = TRUE;
     }
     if(strchr(authorized_key, '~'))
     {
