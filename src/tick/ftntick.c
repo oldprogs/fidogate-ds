@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntick.c,v 1.3 2003/10/01 05:31:49 dsas Exp $
+ * $Id: ftntick.c,v 1.4 2003/10/02 00:57:50 rusfidogate Exp $
  *
  * Process incoming TIC files
  *
@@ -37,7 +37,7 @@
 
 
 #define PROGRAM		"ftntick"
-#define VERSION		"$Revision: 1.3 $"
+#define VERSION		"$Revision: 1.4 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -198,7 +198,7 @@ int do_tic(int w_flag)
 	 hi_init_tic_history();
 	 sprintf(buffer,"%s %s %s %lx",tic.area ,znfp1(&tic.origin), tic.file,
 	             tic.crc);
-	 if (hi_test(buffer) && (!tic.replaces || !stricmp(tic.file, tic.replaces)))
+	 if (hi_test(buffer) && (!tic.replaces || stricmp(tic.file,tic.replaces)!=0))
 	 {
 	     hi_close();
 	     unlock_program(cf_p_lock_history());
