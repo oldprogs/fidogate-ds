@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftninpost.c,v 1.6 2004/03/01 19:00:54 rusfidogate Exp $
+ * $Id: ftninpost.c,v 1.7 2004/03/24 18:21:01 rusfidogate Exp $
  *
  * Processing inbound packets
  *
@@ -34,7 +34,7 @@
 
 
 #define PROGRAM 	"ftninpost"
-#define VERSION 	"$Revision: 1.6 $"
+#define VERSION 	"$Revision: 1.7 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 typedef struct split_t {
@@ -213,7 +213,7 @@ int do_dir(char *cdir, int mode)
 	{
 	    char rfc_file[MAXPATH];
 	    FILE *fp;
-	    char *p;
+	    char *p = NULL;
 	    int ret, pr = FALSE;
 
 	    BUF_COPY3(rfc_file, cdir, "/", dir->d_name);
