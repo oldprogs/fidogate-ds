@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: message.c,v 1.3 2003/12/22 20:58:03 rusfidogate Exp $
+ * $Id: message.c,v 1.4 2003/12/22 21:10:07 rusfidogate Exp $
  *
  * Reading and processing FTN text body
  *
@@ -821,8 +821,6 @@ short int pkt_get_body_parse(FILE *fp, MsgBody *body, Node *from, Node *to)
 	    debug(9, "WARNING: no ' * Origin:' line!");
 #ifdef INSERT_ORIGIN
 	    sprintf(buffer, " * Origin: (%s)\r", znfp1(from));
-#else
-	    sprintf(buffer, " * Origin: \r");
 #endif
 	    body->origin = strsave(buffer);
 	}
