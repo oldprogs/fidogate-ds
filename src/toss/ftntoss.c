@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntoss.c,v 1.1 2003/09/23 17:45:11 rusfidogate Exp $
+ * $Id: ftntoss.c,v 1.2 2003/10/27 16:56:24 rusfidogate Exp $
  *
  * Toss FTN NetMail/EchoMail
  *
@@ -40,7 +40,7 @@
 
 
 #define PROGRAM 	"ftntoss"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.2 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -1574,7 +1574,7 @@ int do_netmail(Packet *pkt, Message *msg, MsgBody *body, int forwarded)
     }
 
 #ifdef DO_NOT_TOSS_NETMAIL
-    pkt_outdir(cf_p_outnetmail(), NULL);
+    pkt_outdir(cf_p_outpkt_mail(), NULL);
 #endif /* !DO_NOT_TOSS_NETMAIL */
 
     /* Open output packet */
@@ -1595,7 +1595,7 @@ int do_netmail(Packet *pkt, Message *msg, MsgBody *body, int forwarded)
 	return severe_error=ERROR;
 
 #ifdef DO_NOT_TOSS_NETMAIL
-    pkt_outdir(O_flag ? O_flag : cf_p_default_toss_route(), NULL);
+    pkt_outdir(O_flag ? O_flag : cf_p_toss_route(), NULL);
 #endif /* DO_NOT_TOSS_NETMAIL */
 
     msgs_netmail++;

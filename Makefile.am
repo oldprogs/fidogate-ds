@@ -1,18 +1,18 @@
 #
 #
-# $Id: Makefile.am,v 1.1 2003/09/23 17:26:56 rusfidogate Exp $
+# $Id: Makefile.am,v 1.2 2003/10/27 16:56:23 rusfidogate Exp $
 #
 # Makefile FIDOGATE TOPDIR
 #
 
-AUTOMAKE_OPTIONS=foreign
+AUTOMAKE_OPTIONS=foreign dist-bzip2 1.5
 
 include $(top_builddir)/build/config.make
 
 
 TOPDIR		= .
 
-SUBDIRS		= src scripts doc test
+SUBDIRS		= src scripts doc
 
 FDESTDIR	= $(DEFAULT_V_CONFIGDIR) \
 		  $(DEFAULT_V_LOGDIR) \
