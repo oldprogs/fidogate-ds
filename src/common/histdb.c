@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: histdb.c,v 1.10 2004/03/04 19:44:12 rusfidogate Exp $
+ * $Id: histdb.c,v 1.11 2004/03/10 19:34:27 rusfidogate Exp $
  *
  * MSGID history functions and dupe checking
  *
@@ -173,12 +173,12 @@ short int hi_write_dbc(char *rfc_msgid, char *fido_msgid, short int dont_flush)
     GetTimeInfo(&ti);
     if(hi_file)
     {
-    /* Get offset in history text file */ 
-     if ( (offset = ftell(hi_file)) == ERROR) 
-     {
+      /* Get offset in history text file */ 
+      if ( (offset = ftell(hi_file)) == ERROR) 
+      {
 	fglog("$ERROR: ftell DBC MSGID history failed");
 	return ERROR;
-     } 
+      } 
     } 
     else 
     { 
@@ -226,12 +226,12 @@ short int hi_write_t(time_t t, time_t msgdate, char *msgid)
 
     if (hi_file)
     {
-     /* Get offset in history text file */ 
-     if( (offset = ftell(hi_file)) == ERROR) 
-     {
+      /* Get offset in history text file */ 
+      if( (offset = ftell(hi_file)) == ERROR) 
+      {
 	fglog("$ERROR: ftell MSGID history failed");
 	return ERROR;
-     }
+      }
     }
     else 
     { 
