@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: areafix.c,v 1.19 2004/07/22 19:44:38 anray Exp $
+ * $Id: areafix.c,v 1.20 2004/09/10 18:27:29 anray Exp $
  *
  * Common Areafix functions
  *
@@ -359,8 +359,13 @@ int areafix_auth_check(Node *node, char *passwd, int checkpass)
 
     if(pwd == NULL)
     {
-	fglog("WARNING: node %s have null password",znfp1(node));
-	return authorized;
+	if( cf_get_string("AllowEmptyPwd", TRUE) )
+	    authorized = TRUE;
+	else
+	{
+	    fglog("WARNING: node %s have null password",znfp1(node));
+	    return authorized;
+	}
     }
     
     /* Extract level, key, and real name from pwd->args */

@@ -1,5 +1,5 @@
 
-  $Id: README.ru,v 1.18 2004/07/24 06:19:39 anray Exp $
+  $Id: README.ru,v 1.19 2004/09/10 18:27:29 anray Exp $
 
 
    Copyright (C) 2001-2002, Dmitry Fedotov
@@ -977,6 +977,11 @@ DeleteSeenBy 50/128
 # Аплинку может выставляться флаг ReadOnly.
 #
 UplinkCanBeReadonly
+
+#
+# Разрешить тоссинг беспарольных пакетов.
+#
+AllowEmptyPwd
 
 # Пока не используются
 #RouteFile /var/spool/ndl/r50.rou
