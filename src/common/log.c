@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: log.c,v 1.4 2004/03/24 18:21:01 rusfidogate Exp $
+ * $Id: log.c,v 1.5 2004/03/26 19:08:20 rusfidogate Exp $
  *
  * Log and debug functions
  *
@@ -137,7 +137,7 @@ void fglog(const char *fmt, ...)
 	if(fp)
 	{
 	    fprintf(fp, "%s %s ",
-		    date_buf(buf, sizeof(buf), DATE_LOG, 0), logprog);
+		    date_buf(buf, sizeof(buf), DATE_LOG, (long *)0), logprog);
 	    vfprintf(fp, *fmt == '$' ? fmt + 1 : fmt, args);
 	    if (*fmt == '$')
 		fprintf(fp, " (errno=%d: %s)", errno, strerror(errno));
