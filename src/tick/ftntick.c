@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftntick.c,v 1.2 2003/09/29 20:58:23 dsas Exp $
+ * $Id: ftntick.c,v 1.3 2003/10/01 05:31:49 dsas Exp $
  *
  * Process incoming TIC files
  *
@@ -37,7 +37,7 @@
 
 
 #define PROGRAM		"ftntick"
-#define VERSION		"$Revision: 1.2 $"
+#define VERSION		"$Revision: 1.3 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -1069,7 +1069,7 @@ int main(int argc, char **argv)
 	    exec_script = optarg;
 	    break;
 	    
-	/***** Common options *****/
+    	/***** Common options *****/
 	case 'v':
 	    verbose++;
 	    break;
