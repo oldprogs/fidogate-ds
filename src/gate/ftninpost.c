@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftninpost.c,v 1.10 2004/07/22 19:44:38 anray Exp $
+ * $Id: ftninpost.c,v 1.11 2004/08/02 19:07:13 anray Exp $
  *
  * Processing inbound packets
  *
@@ -34,7 +34,7 @@
 
 
 #define PROGRAM 	"ftninpost"
-#define VERSION 	"$Revision: 1.10 $"
+#define VERSION 	"$Revision: 1.11 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 typedef struct split_t {
@@ -276,11 +276,6 @@ int do_dir(char *cdir, int mode)
 		rename(rfc_file, bad);
 	    }
 	    unlink( rfc_file );
-	    if( (p = cf_get_string("AfterGateNews", TRUE)) )
-	    {
-		debug(8, "config: AfterGateNews %s", p);
-		run_system(p);
-	    }
 	}
     }
     dir_close();
