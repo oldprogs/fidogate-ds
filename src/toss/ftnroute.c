@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftnroute.c,v 1.1 2003/09/23 17:44:55 rusfidogate Exp $
+ * $Id: ftnroute.c,v 1.2 2004/02/22 16:30:42 rusfidogate Exp $
  *
  * Route FTN NetMail/EchoMail
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"ftnroute"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.2 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -214,7 +214,7 @@ int nodelist_read(void)
 
 	if( (stat(nl_file, &statnl)) != 0 )
 	{
-	    log("$ERROR: can't stat file %s", nl_file, errno);
+	    log("$ERROR: can't stat file %s", nl_file);
 	    continue;
 	}
 	if( ( stat(cf_p_hubroutedb(), &statdb)) == 0 )
