@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: rfc2ftn.c,v 1.6 2004/01/27 18:17:47 rusfidogate Exp $
+ * $Id: rfc2ftn.c,v 1.7 2004/02/07 01:47:01 rusfidogate Exp $
  *
  * Read mail or news from standard input and convert it to a FIDO packet.
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"rfc2ftn"
-#define VERSION 	"$Revision: 1.6 $"
+#define VERSION 	"$Revision: 1.7 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -1397,56 +1397,48 @@ int snd_message(Message *msg, Area *parea,
     /***** ^A kludges *******************************************************/
 
     /* Add kludges for MSGID / REPLY */
-    if(!x_flags_m)			/* ! X-Flags: m */
+    if((header = s_header_getcomplete("Message-ID")))
     {
-	if((header = s_header_getcomplete("Message-ID")))
-	{
 #ifdef FIDO_STYLE_MSGID
 	    if((id = s_msgid_rfc_to_fido(&flag, header, part, split != 0, msg->area,
 					 dont_flush_dbc_history, 0)))
 	    {
-	     if(!echogate_alias)
-		fprintf(sf, "\001MSGID: %s %s\r\n", znfp1(&msg->node_from), id);
-	     else
-		fprintf(sf, "\001MSGID: %s %s\r\n", znf1(node_from), id);
+		if(!echogate_alias)
+		    fprintf(sf, "\001MSGID: %s %s\r\n", znfp1(&msg->node_from), id);
+		else
+		    fprintf(sf, "\001MSGID: %s %s\r\n", znf1(node_from), id);
 	    }
 #else
-	    if((id = s_msgid_rfc_to_fido(&flag, header, part, split != 0, msg->area)))
-		fprintf(sf, "\001MSGID: %s\r\n", id);
+	    if((id = s_msgid_rfc_to_fido(&flag, header, part, split != 0, msg->area,
+					 x_flags_m, 0)))
+	    {
+	     if(!x_flags_m)					/* X-Flags: m */
+		    fprintf(sf, "\001MSGID: %s\r\n", id);
+	     else
+	     {
+		if(!echogate_alias)
+		    fprintf(sf, "\001MSGID: %s %s\r\n", znfp1(&msg->node_from), id);
+		else
+		    fprintf(sf, "\001MSGID: %s %s\r\n", znf1(node_from), id);
+	     }
+	    }
 #endif
-	}	
-	else
-	    print_local_msgid(sf, node_from);
+    }	
+    else
+		    print_local_msgid(sf, node_from);
 	
 	if((header = s_header_getcomplete("References")) ||
 	   (header = s_header_getcomplete("In-Reply-To")))
 	{
 #ifdef FIDO_STYLE_MSGID
-	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area, 0, 1)))
+	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area,
+					 0, 1)))
 #else
-	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area)))
+	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area,
+					 x_flags_m, 1)))
 #endif
-		fprintf(sf, "\001REPLY: %s\r\n", id);
+		    fprintf(sf, "\001REPLY: %s\r\n", id);
 	}
-    }
-    else
-#ifdef REPLY_IF_X_FLAGS_M
-    {
-#endif /* REPLY_IF_X_FLAGS_M */
-	print_local_msgid(sf, node_from);
-#ifdef REPLY_IF_X_FLAGS_M
-	if((header = s_header_getcomplete("References")) ||
-	   (header = s_header_getcomplete("In-Reply-To")))
-	{
-#ifdef FIDO_STYLE_MSGID
-	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area, 0, 1)))
-#else
-	    if((id = s_msgid_rfc_to_fido(&flag, header, 0, 0, msg->area)))
-#endif
-		fprintf(sf, "\001REPLY: %s\r\n", id);
-	}
-    }
-#endif /* REPLY_IF_X_FLAGS_M */
 
     if(!no_fsc_0035)
 	if(!x_flags_n && !(alias_found && no_fsc_0035_if_alias))

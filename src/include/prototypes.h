@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: prototypes.h,v 1.3 2004/01/25 12:59:57 rusfidogate Exp $
+ * $Id: prototypes.h,v 1.5 2004/02/07 01:47:01 rusfidogate Exp $
  *
  * Prototypes for functions in libfidogate.a
  *
@@ -318,7 +318,7 @@ extern int verbose;
 extern int no_debug;
 
 char   *strerror		(int);
-void	log_fg			(const char *, ...)
+void	log			(const char *, ...)
     __attribute__ ((format (printf, 1, 2)));
 void	debug			(int, const char *, ...)
     __attribute__ ((format (printf, 2, 3)));
@@ -424,11 +424,7 @@ int    xfeof                    (FILE *);
 /* msgid.c */
 char   *s_msgid_fido_to_rfc	(char *, int *, short);
 char   *s_msgid_default		(Message *);
-#ifdef FIDO_STYLE_MSGID
 char   *s_msgid_rfc_to_fido	(int *, char *, int, int, char *, short int, int);
-#else
-char   *s_msgid_rfc_to_fido     (int *, char *, int, int, char *);
-#endif
 char   *s_msgid_convert_origid	(char *);
 
 /* node.c */
