@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftninpost.c,v 1.3 2003/09/24 18:36:15 rusfidogate Exp $
+ * $Id: ftninpost.c,v 1.4 2003/09/25 04:48:34 rusfidogate Exp $
  *
  * Processing inbound packets
  *
@@ -34,7 +34,7 @@
 
 
 #define PROGRAM 	"ftninpost"
-#define VERSION 	"$Revision: 1.3 $"
+#define VERSION 	"$Revision: 1.4 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 typedef struct split_t {
@@ -270,6 +270,7 @@ int do_dir(char *cdir, int mode)
 		    log( "$WARNING: %s returned non-zero status", p );
 		    str_change_ext(bad, sizeof(bad), rfc_file, ".bad");
 		    log("ERROR: bad rfcbatch renamed to %s", bad);
+		    rename(rfc_file, bad);
 		}
 		unlink( rfc_file );
 	    }
