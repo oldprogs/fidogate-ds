@@ -15,7 +15,7 @@
 
 #
 #
-# $Id: Makefile.in,v 1.28 2004/07/20 18:59:46 anray Exp $
+# $Id: Makefile.in,v 1.29 2004/08/07 09:00:43 anray Exp $
 #
 # Makefile FIDOGATE TOPDIR
 #
@@ -70,6 +70,7 @@ AS = @AS@
 AWK = @AWK@
 BATCHER = @BATCHER@
 CC = @CC@
+CPP = @CPP@
 CXX = @CXX@
 DEPDIR = @DEPDIR@
 DLLTOOL = @DLLTOOL@
