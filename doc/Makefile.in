@@ -14,7 +14,7 @@
 @SET_MAKE@
 
 #
-# $Id: Makefile.in,v 1.5 2003/10/18 00:13:49 rusfidogate Exp $
+# $Id: Makefile.in,v 1.6 2003/10/18 16:10:31 rusfidogate Exp $
 #
 # Makefile.am FIDOGATE doc/
 #
@@ -146,6 +146,7 @@ configs = mailer/postfix/master.cf \
 	    news/leafnode/common.h \
 	    news/leafnode/Makefile \
 	    examples/dyff/fidogate.conf.sample \
+	    examples/point/fidogate.conf \
 	    examples/dyff/packing.sample
 
 

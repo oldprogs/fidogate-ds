@@ -1,6 +1,6 @@
 #:ts=8
 #
-#    $Id: Makefile.am,v 1.1 2003/09/23 17:37:35 rusfidogate Exp $
+#    $Id: Makefile.am,v 1.2 2003/10/18 16:10:32 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE src/areafix/
 #
@@ -13,7 +13,7 @@ else
 LDADD			= $(top_srcdir)/src/common/libfidogate.la
 endif
 
-CFLAGS			= -Wall
+AM_CFLAGS		= -Wall
 
 bin_PROGRAMS		= ftnaf ftnafutil pkttmpl
 libexec_PROGRAMS        = ftnafpkt ftnafmail
