@@ -1,5 +1,5 @@
 
-  $Id: README.ru,v 1.24 2004/11/20 09:43:01 anray Exp $
+  $Id: README.ru,v 1.25 2004/11/22 05:43:02 anray Exp $
 
 
    Copyright (C) 2001-2002, Dmitry Fedotov
@@ -339,6 +339,10 @@ configure, если они есть):
 `RECODE_ALL_RFC'(--disable-recode-allrfc)
     При гейтовании RFC->FTN Перекодировать все RFC заголовки. По умолчанию
     включено.
+
+`HAS_POSIX_REGEX'(--enable-posix-regex)
+    Компиляция с поддержкой posix regex. Для успешной компиляции истема должна
+    поддерживать posix regex. Необходима для работы опции Regex1stLine.
 
 `OLD_BATCHER'(none)
     Старый тип ведения батч файла ньюс сервера (в частности его использует
