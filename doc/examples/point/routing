@@ -1,5 +1,5 @@
 #
-# $Id: routing,v 1.1 2003/09/23 17:32:32 rusfidogate Exp $
+# $Id: routing,v 1.2 2003/10/18 00:13:49 rusfidogate Exp $
 #
 # FIDOGATE ftntoss/ftnroute routing/remap/rewrite config file
 #
@@ -26,12 +26,16 @@
 #
 
 NetMail
-route    hold   2:2499/999.9
-route    normal 2:2499/999 1:* 2:* 3:* 4:* 5:* 6:*
 
-# Crash mail via boss
-bossroute crash	*
+send		hold   2:2499/999.9
+route		normal 2:2499/999 1:* 2:* 3:* 4:* 5:* 6:*
 
 EchoMail
-sendmove hold   2:2499/999.9
-sendmove normal *
+
+sendmove	hold   2:2499/999.9
+sendmove	normal *
+
+Tick
+
+send		hold   2:2499/999.9
+send		normal *
