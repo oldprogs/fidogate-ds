@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: hosts.c,v 1.1 2003/09/23 17:41:21 rusfidogate Exp $
+ * $Id: hosts.c,v 1.1.1.1 2003/09/23 17:41:21 rusfidogate Exp $
  *
  * Process hostname <-> node aliases from hosts file
  *

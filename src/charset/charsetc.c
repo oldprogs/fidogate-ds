@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: charsetc.c,v 1.1 2003/09/23 17:38:39 rusfidogate Exp $
+ * $Id: charsetc.c,v 1.1.1.1 2003/09/23 17:38:39 rusfidogate Exp $
  *
  * Charset mapping table compiler
  *
@@ -36,7 +36,7 @@
 
 
 #define PROGRAM		"charsetc"
-#define VERSION		"$Revision: 1.1 $"
+#define VERSION		"$Revision: 1.1.1.1 $"
 
 
 

@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: pktmore.in,v 1.1 2003/09/23 17:45:39 rusfidogate Exp $
+# $Id: pktmore.in,v 1.1.1.1 2003/09/23 17:45:39 rusfidogate Exp $
 #
 # Pager wrapper for pktdebug
 #

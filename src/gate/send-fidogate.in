@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: send-fidogate.in,v 1.1 2003/09/23 17:43:43 rusfidogate Exp $
+# $Id: send-fidogate.in,v 1.1.1.1 2003/09/23 17:43:43 rusfidogate Exp $
 #
 # SH script to send batches to FIDOGATE
 #

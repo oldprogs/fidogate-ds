@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: dir.c,v 1.1 2003/09/23 17:41:03 rusfidogate Exp $
+ * $Id: dir.c,v 1.1.1.1 2003/09/23 17:41:03 rusfidogate Exp $
  *
  * Reading/sorting directories
  *

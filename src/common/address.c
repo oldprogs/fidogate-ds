@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: address.c,v 1.1 2003/09/23 17:40:11 rusfidogate Exp $
+ * $Id: address.c,v 1.1.1.1 2003/09/23 17:40:11 rusfidogate Exp $
  *
  * Parsing and conversion for FIDO and RFC addresses
  *

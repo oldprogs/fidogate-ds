@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: uplinks.c,v 1.1 2003/09/23 17:42:43 rusfidogate Exp $
+ * $Id: uplinks.c,v 1.1.1.1 2003/09/23 17:42:43 rusfidogate Exp $
  *
  * Read area uplinks list from file. The format is as follows:
  *	ROBOT_TYPE   AREAS   Z:N/F.P   ROBOT_NAME    PASSWORD

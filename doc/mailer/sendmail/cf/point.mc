@@ -1,12 +1,12 @@
 #
-# $Id: point.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $
+# $Id: point.mc,v 1.1.1.1 2003/09/23 17:33:11 rusfidogate Exp $
 #
 # sendmail V8 configuration for a FIDO point, routing all Internet mail
 # via FIDOGATE and a FIDO-Internet gateway
 #
 
 include(`../m4/cf.m4')
-VERSIONID(`$Id: point.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $')
+VERSIONID(`$Id: point.mc,v 1.1.1.1 2003/09/23 17:33:11 rusfidogate Exp $')
 OSTYPE(linux)
 
 define(`confMIME_FORMAT_ERRORS', `False')

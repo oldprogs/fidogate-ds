@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: rematch.c,v 1.1 2003/09/23 17:42:16 rusfidogate Exp $
+ * $Id: rematch.c,v 1.1.1.1 2003/09/23 17:42:16 rusfidogate Exp $
  *
  * Regular expression (POSIX functions) handling for FIDOGATE
  *

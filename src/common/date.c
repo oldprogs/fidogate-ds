@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: date.c,v 1.1 2003/09/23 17:40:47 rusfidogate Exp $
+ * $Id: date.c,v 1.1.1.1 2003/09/23 17:40:47 rusfidogate Exp $
  *
  * date() date/time print function
  *

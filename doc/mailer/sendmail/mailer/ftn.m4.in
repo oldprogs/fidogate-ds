@@ -1,6 +1,6 @@
 PUSHDIVERT(-1)
 #
-# $Id: ftn.m4.in,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $
+# $Id: ftn.m4.in,v 1.1.1.1 2003/09/23 17:33:11 rusfidogate Exp $
 #
 # FIDOGATE FTN mailer for sendmail V8
 #
@@ -28,7 +28,7 @@ POPDIVERT
 ###    FTN Mailer specification   ###
 #####################################
 
-VERSIONID(`$Revision: 1.1 $')
+VERSIONID(`$Revision: 1.1.1.1 $')
 
 ifdef(`_MAILER_smtp_',
 `# FIDOGATE mailer

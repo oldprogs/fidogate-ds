@@ -1,6 +1,6 @@
 # -*- Makefile -*-
 #
-# $Id: config.make,v 1.1 2003/09/23 17:32:54 rusfidogate Exp $
+# $Id: config.make,v 1.1.1.1 2003/09/23 17:32:54 rusfidogate Exp $
 #
 # FIDOGATE main configuration (Win32 port)
 #

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftnexpire.c,v 1.1 2003/09/23 17:44:33 rusfidogate Exp $
+ * $Id: ftnexpire.c,v 1.1.1.1 2003/09/23 17:44:33 rusfidogate Exp $
  *
  * Expire MSGID history database
  *
@@ -36,7 +36,7 @@
 
 
 #define PROGRAM 	"ftnexpire"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.1.1.1 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 

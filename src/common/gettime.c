@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: gettime.c,v 1.1 2003/09/23 17:41:21 rusfidogate Exp $
+ * $Id: gettime.c,v 1.1.1.1 2003/09/23 17:41:21 rusfidogate Exp $
  *
  * Get system date/time. Taken from ifmail 1.7 / inn 1.4 and adopted
  * for FIDOGATE .

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: textlist.c,v 1.1 2003/09/23 17:42:32 rusfidogate Exp $
+ * $Id: textlist.c,v 1.1.1.1 2003/09/23 17:42:32 rusfidogate Exp $
  *
  * Store text file as chain of linked text lines in memory
  *

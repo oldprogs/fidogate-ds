@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: wildmat.c,v 1.1 2003/09/23 17:42:49 rusfidogate Exp $
+ * $Id: wildmat.c,v 1.1.1.1 2003/09/23 17:42:49 rusfidogate Exp $
  *
  * Wildcard matching
  *

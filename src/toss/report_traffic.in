@@ -11,14 +11,14 @@
 #
 # FIDO:	  2:5030/1229
 #
-# $Id: report_traffic.in,v 1.1 2003/09/23 17:45:16 rusfidogate Exp $
+# $Id: report_traffic.in,v 1.1.1.1 2003/09/23 17:45:16 rusfidogate Exp $
 #
 
 require 5.000;
 
 use strict;
 
-my $VERSION = '$Revision: 1.1 $ ';
+my $VERSION = '$Revision: 1.1.1.1 $ ';
 my $PROGRAM = "report_traffic";
 
 use POSIX qw(strftime);

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: routing.c,v 1.1 2003/09/23 17:42:27 rusfidogate Exp $
+ * $Id: routing.c,v 1.1.1.1 2003/09/23 17:42:27 rusfidogate Exp $
  *
  * Routing config file reading for ftntoss and ftnroute.
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: declare.h,v 1.1 2003/09/23 17:43:43 rusfidogate Exp $
+ * $Id: declare.h,v 1.1.1.1 2003/09/23 17:43:43 rusfidogate Exp $
  *
  * Declaration header for not-so-ANSI systems
  *

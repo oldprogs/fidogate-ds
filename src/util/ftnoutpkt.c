@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftnoutpkt.c,v 1.1 2003/09/23 17:45:39 rusfidogate Exp $
+ * $Id: ftnoutpkt.c,v 1.1.1.1 2003/09/23 17:45:39 rusfidogate Exp $
  *
  * Create packet in OUTPKT with message from stdin.
  *
@@ -36,7 +36,7 @@
 
 
 #define PROGRAM		"ftnoutpkt"
-#define VERSION		"$Revision: 1.1 $"
+#define VERSION		"$Revision: 1.1.1.1 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 

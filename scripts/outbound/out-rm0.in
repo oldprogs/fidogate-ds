@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: out-rm0.in,v 1.1 2003/09/23 17:37:27 rusfidogate Exp $
+# $Id: out-rm0.in,v 1.1.1.1 2003/09/23 17:37:27 rusfidogate Exp $
 #
 # Remove empty ArcMail archives in outbound
 #

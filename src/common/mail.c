@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: mail.c,v 1.1 2003/09/23 17:41:32 rusfidogate Exp $
+ * $Id: mail.c,v 1.1.1.1 2003/09/23 17:41:32 rusfidogate Exp $
  *
  * Create RFC messages in mail/news dir
  *

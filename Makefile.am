@@ -1,6 +1,6 @@
 #
 #
-# $Id: Makefile.am,v 1.1 2003/09/23 17:26:56 rusfidogate Exp $
+# $Id: Makefile.am,v 1.1.1.1 2003/09/23 17:26:56 rusfidogate Exp $
 #
 # Makefile FIDOGATE TOPDIR
 #

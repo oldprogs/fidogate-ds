@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: parsenode.c,v 1.1 2003/09/23 17:42:16 rusfidogate Exp $
+ * $Id: parsenode.c,v 1.1.1.1 2003/09/23 17:42:16 rusfidogate Exp $
  *
  * Parse FTN address strings (Z:N/F.P)
  *

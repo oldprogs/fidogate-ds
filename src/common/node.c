@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: node.c,v 1.1 2003/09/23 17:41:54 rusfidogate Exp $
+ * $Id: node.c,v 1.1.1.1 2003/09/23 17:41:54 rusfidogate Exp $
  *
  * Conversion Node structure <-> Z:N/F.P / pP.fF.nN.zZ
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: aliases.c,v 1.1 2003/09/23 17:40:20 rusfidogate Exp $
+ * $Id: aliases.c,v 1.1.1.1 2003/09/23 17:40:20 rusfidogate Exp $
  *
  * Read user name aliases from file. The alias.users format is as follows:
  *	username    Z:N/F.P    Full Name

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: packet.c,v 1.1 2003/09/23 17:42:00 rusfidogate Exp $
+ * $Id: packet.c,v 1.1.1.1 2003/09/23 17:42:00 rusfidogate Exp $
  *
  * Functions to read/write packets and messages
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: crc16.c,v 1.1 2003/09/23 17:40:41 rusfidogate Exp $
+ * $Id: crc16.c,v 1.1.1.1 2003/09/23 17:40:41 rusfidogate Exp $
  *
  * Compute CRC16
  *

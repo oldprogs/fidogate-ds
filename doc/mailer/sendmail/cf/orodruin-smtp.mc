@@ -1,12 +1,12 @@
 #:ts=8
 #
-# $Id: orodruin-smtp.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $
+# $Id: orodruin-smtp.mc,v 1.1.1.1 2003/09/23 17:33:11 rusfidogate Exp $
 #
 # Fido.DE subsidiary machine (SMTP)
 #
 
 include(`../m4/cf.m4')
-VERSIONID(`$Id: orodruin-smtp.mc,v 1.1 2003/09/23 17:33:11 rusfidogate Exp $')
+VERSIONID(`$Id: orodruin-smtp.mc,v 1.1.1.1 2003/09/23 17:33:11 rusfidogate Exp $')
 OSTYPE(linux)dnl
 
 define(`confCF_VERSION', `orodruin-4.1')

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: confval.c,v 1.1 2003/09/23 17:45:28 rusfidogate Exp $
+ * $Id: confval.c,v 1.1.1.1 2003/09/23 17:45:28 rusfidogate Exp $
  *
  * Active group
  *
@@ -33,7 +33,7 @@
 #include "getopt.h"
 
 #define PROGRAM 	"confval"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.1.1.1 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 

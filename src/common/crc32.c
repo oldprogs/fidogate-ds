@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: crc32.c,v 1.1 2003/09/23 17:40:47 rusfidogate Exp $
+ * $Id: crc32.c,v 1.1.1.1 2003/09/23 17:40:47 rusfidogate Exp $
  *
  * Compute 32 bit CRC value
  *

@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: rfcheader.c,v 1.1 2003/09/23 17:42:21 rusfidogate Exp $
+ * $Id: rfcheader.c,v 1.1.1.1 2003/09/23 17:42:21 rusfidogate Exp $
  *
  * Functions to process RFC822 header lines from messages
  *

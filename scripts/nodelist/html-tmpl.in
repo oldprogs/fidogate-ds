@@ -1,5 +1,5 @@
 #!<PERL5>
-# $Id: html-tmpl.in,v 1.1 2003/09/23 17:37:09 rusfidogate Exp $
+# $Id: html-tmpl.in,v 1.1.1.1 2003/09/23 17:37:09 rusfidogate Exp $
 #
 # Perl routines for doing substitutions in HTML template
 #

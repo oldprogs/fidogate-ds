@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: misc.c,v 1.1 2003/09/23 17:41:43 rusfidogate Exp $
+ * $Id: misc.c,v 1.1.1.1 2003/09/23 17:41:43 rusfidogate Exp $
  *
  * Miscellaneous functions
  *

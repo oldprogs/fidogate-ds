@@ -1,6 +1,6 @@
 #:ts=8
 #
-#    $Id: Makefile,v 1.1 2003/09/23 17:45:39 rusfidogate Exp $
+#    $Id: Makefile,v 1.1.1.1 2003/09/23 17:45:39 rusfidogate Exp $
 #
 #    Makefile for FIDOGATE test/
 #

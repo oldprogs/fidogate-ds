@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: outb-kill.in,v 1.1 2003/09/23 17:37:27 rusfidogate Exp $
+# $Id: outb-kill.in,v 1.1.1.1 2003/09/23 17:37:27 rusfidogate Exp $
 #
 # Remove node from areas.bbs, kill outbound files
 #

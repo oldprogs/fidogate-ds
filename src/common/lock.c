@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: lock.c,v 1.1 2003/09/23 17:41:26 rusfidogate Exp $
+ * $Id: lock.c,v 1.1.1.1 2003/09/23 17:41:26 rusfidogate Exp $
  *
  * File locking
  *
