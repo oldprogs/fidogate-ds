@@ -1,6 +1,6 @@
 #!<SHELL>
 #
-# $Id: send-fidogate.in,v 1.1 2003/09/23 17:43:43 rusfidogate Exp $
+# $Id: send-fidogate.in,v 1.2 2004/06/07 19:55:53 rusfidogate Exp $
 #
 # SH script to send batches to FIDOGATE
 #
@@ -13,8 +13,8 @@ eval `<NEWSBINDIR>/innconfval -s`
 
 RFC2FTN=<SEND_RFC2FTN>
 PROGNAME=`basename $0`
-LOCK=<LOCKDIR>/LOCK.${PROGNAME}
-LOG=<LOGDIR>/${PROGNAME}.log
+LOCK=`<LIBEXECDIR>/confval -p LOCKDIR`/LOCK.${PROGNAME}
+LOG=`<LIBEXECDIR>/confval -p LOGDIR`/${PROGNAME}.log
 BATCH=${PATHOUTGOING}
 
 MAXJOBS=200

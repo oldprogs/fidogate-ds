@@ -1,5 +1,5 @@
 
-    $Id: FAQ.ru,v 1.14 2004/05/27 00:30:18 rusfidogate Exp $
+    $Id: FAQ.ru,v 1.15 2004/06/07 19:55:36 rusfidogate Exp $
 
 Создатель Andrey Slusar 2:467/126, vasallia at ukr.net
 
@@ -304,19 +304,10 @@ Subject: GATE-PORT
   Берем сорсы фидогейта с cvs, копируем их в дирректорию в соответствии
   с version.h:
   --8<---------------cut here---------------start------------->8---
-  /*:ts=8*/
-  /**************************************************************************
-  * FIDOGATE --- Gateway software UNIX Mail/News <-> FIDO NetMail/EchoMail
-  *
-  * $Id: FAQ.ru,v 1.14 2004/05/27 00:30:18 rusfidogate Exp $
-  *
-  * Global version number, patch level
-  ***************************************************************************
-  
   #define VERSION_MAJOR	5
   #define VERSION_MINOR	2
-  #define PATCHLEVEL	0
-  #define EXTRAVERSION	"ds-alpha1"
+  #define PATCHLEVEL	1
+  #define EXTRAVERSION	"ds"
 
   #define STATE		"beta"
   --8<---------------cut here---------------end--------------->8---

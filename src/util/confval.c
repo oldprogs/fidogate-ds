@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: confval.c,v 1.3 2003/09/30 09:48:21 dsas Exp $
+ * $Id: confval.c,v 1.4 2004/06/07 19:55:55 rusfidogate Exp $
  *
  * Active group
  *
@@ -33,7 +33,7 @@
 #include "getopt.h"
 
 #define PROGRAM 	"confval"
-#define VERSION 	"$Revision: 1.3 $"
+#define VERSION 	"$Revision: 1.4 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -99,13 +99,13 @@ int main(int argc, char **argv)
     for(pFirst = config_first(); pFirst; pFirst = pFirst->next)
     {
 	if(argc == 1)
-	    fprintf(stderr, "fidogate_%s=\"%s\"\n", pFirst->key, pFirst->string);
+	    fprintf(stdout, "fidogate_%s=\"%s\"\n", pFirst->key, pFirst->string);
 	else if( p_flag )
 	{
 	    if(!stricmp(p_flag, pFirst->key))
 	    {
 		IsExist = 1;
-		fprintf(stderr, "fidogate_%s=\"%s\"\n", p_flag, pFirst->string);
+		fprintf(stdout, "%s\n", pFirst->string);
 	    }
 	}
     }
