@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: rfc2ftn.c,v 1.13 2004/11/07 19:12:02 anray Exp $
+ * $Id: rfc2ftn.c,v 1.14 2004/11/07 19:59:18 anray Exp $
  *
  * Read mail or news from standard input and convert it to a FIDO packet.
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"rfc2ftn"
-#define VERSION 	"$Revision: 1.13 $"
+#define VERSION 	"$Revision: 1.14 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -149,11 +149,13 @@ Textlist body = { NULL, NULL };
 char *get_name_from_body(void)
 {
     static char line1[2*MAXINETADDR];
+#ifdef HAVE_REGEX_H
+    static char buf[MAXINETADDR];
+#endif
     Textline *tl;
     char *p;
 #if 0
     int found = FALSE;
-    static char buf[MAXINETADDR];
     int i;
 #endif
     
