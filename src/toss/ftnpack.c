@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: ftnpack.c,v 1.1 2003/09/23 17:44:44 rusfidogate Exp $
+ * $Id: ftnpack.c,v 1.2 2004/01/31 18:37:59 rusfidogate Exp $
  *
  * Pack output packets of ftnroute for Binkley outbound (ArcMail)
  *
@@ -40,7 +40,7 @@
 
 
 #define PROGRAM 	"ftnpack"
-#define VERSION 	"$Revision: 1.1 $"
+#define VERSION 	"$Revision: 1.2 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -1032,8 +1032,13 @@ int do_packing(char *name, FILE *fp, Packet *pkt)
 	/* Unknown grade/type for .pkt's files */
 	pktdesc.from  = pkt->from;
 	pktdesc.to    = pkt->to;
+#ifdef DO_NOT_TOSS_NETMAIL
+	pktdesc.grade = 'p';
+	pktdesc.type  = 'n';
+#else
 	pktdesc.grade = '-';
 	pktdesc.type  = '-';
+#endif /* DO_NOT_TOSS_NETMAIL */
 	pktdesc.flav  = FLAV_NORMAL;
 	
 	desc = &pktdesc;
