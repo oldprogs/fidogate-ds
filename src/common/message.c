@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FIDO NetMail/EchoMail
  *
- * $Id: message.c,v 1.4 2003/12/22 21:10:07 rusfidogate Exp $
+ * $Id: message.c,v 1.5 2004/02/21 00:01:17 rusfidogate Exp $
  *
  * Reading and processing FTN text body
  *
@@ -407,7 +407,7 @@ static int msg_body_parse_netmail(MsgBody *body)
 
     return OK;
 }
-#endif /* OLD_TMP */
+#endif /* OLD_TOSS */
 
 
 int is_blank_line(char *s)
@@ -423,7 +423,7 @@ int is_blank_line(char *s)
     return TRUE;
 }
 
-#ifdef OLD_TMP
+#ifdef OLD_TOSS
 int msg_body_parse(Textlist *text, MsgBody *body)
 {
     Textline *p, *pn;
@@ -513,7 +513,7 @@ int msg_body_parse(Textlist *text, MsgBody *body)
     return body->area ? msg_body_parse_echomail(body)
 	              : msg_body_parse_netmail (body) ;
 }
-#endif /* OLD_TMP */
+#endif /* OLD_TOSS */
 
 #define HI_KLUDGE		1
 #define PARSE_BLANK		2
