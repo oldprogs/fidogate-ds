@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.14 2004/06/08 17:45:58 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.15 2004/06/30 17:34:48 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -143,7 +143,7 @@ Address		2:5030/1229.1
 #
 #	zone	Internet domain		FTN domain	Outbound
 #	----	---------------		----------	--------
-Zone	default	.ftn.org		ftn		-
+Zone	default	.fidonet.org		fidonet		out
 Zone	1	.fidonet.org		fidonet		out.001
 Zone	2	.fidonet.org		fidonet		out
 Zone	3	.fidonet.org		fidonet		out.003
