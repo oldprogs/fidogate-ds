@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.in,v 1.1 2003/10/18 00:20:19 rusfidogate Exp $
+# $Id: fidogate.conf.in,v 1.2 2004/01/23 02:51:00 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.0.0) single common config file
 #
@@ -295,7 +295,7 @@ TickDontSetTime
 #
 # Directory for old files replaced by ftntick with new versions
 #
-TickReplacedDir	"%G/oldfiles"
+TickReplacedDir	%G/oldfiles
 
 # Ignore replase old files
 TickReplacedIgnore
