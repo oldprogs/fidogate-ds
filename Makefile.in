@@ -15,7 +15,7 @@
 
 #
 #
-# $Id: Makefile.in,v 1.1.1.1 2003/09/23 17:27:07 rusfidogate Exp $
+# $Id: Makefile.in,v 1.1.1.2 2003/09/23 17:53:38 rusfidogate Exp $
 #
 # Makefile FIDOGATE TOPDIR
 #
@@ -122,7 +122,7 @@ AUTOMAKE_OPTIONS = foreign
 
 TOPDIR = .
 
-SUBDIRS = src scripts doc test
+SUBDIRS = src scripts doc
 
 FDESTDIR = $(DEFAULT_V_CONFIGDIR) \
 		  $(DEFAULT_V_LOGDIR) \
