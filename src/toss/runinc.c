@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: runinc.c,v 1.12 2004/09/10 18:27:30 anray Exp $
+ * $Id: runinc.c,v 1.13 2004/11/18 23:56:25 anray Exp $
  *
  * Processing inbound packets
  *
@@ -62,7 +62,7 @@
 #endif
 
 #define PROGRAM		"runinc"
-#define VERSION		"$Revision: 1.12 $"
+#define VERSION		"$Revision: 1.13 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 void* subs(char *str,char *macro,char *expand);
@@ -467,7 +467,7 @@ int toss_init(void)
     unsigned short i;
     
     toss[0].name = "pin";
-    BUF_EXPAND(pathbuffer,cf_p_pinbound());
+    BUF_EXPAND(pathbuffer, cf_p_pinbound());
     toss[0].inbound = strsave(pathbuffer);
     sprintf(buffer, "-F%s", toss[0].inbound);
     toss[0].fadir = strsave(buffer);
@@ -475,7 +475,7 @@ int toss_init(void)
     toss[0].flags = "-s";
 
     toss[1].name = "in";
-    BUF_EXPAND(pathbuffer,cf_p_inbound());
+    BUF_EXPAND(pathbuffer, cf_p_inbound());
     toss[1].inbound = strsave(pathbuffer);
     sprintf(buffer, "-F%s", toss[1].inbound);
     toss[1].fadir = strsave(buffer);

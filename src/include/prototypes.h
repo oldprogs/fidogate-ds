@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: prototypes.h,v 1.8 2004/07/10 19:43:39 anray Exp $
+ * $Id: prototypes.h,v 1.9 2004/11/18 23:56:25 anray Exp $
  *
  * Prototypes for functions in libfidogate.a
  *
@@ -531,7 +531,7 @@ char *read_line			(char *, int, FILE *);
 long  read_rnews_size		(FILE *);
 
 /* rematch.c */
-#ifdef HAVE_REGEX_H
+#ifdef HAS_POSIX_REGEX
 int	regex_match		(const char *);
 char   *str_regex_match_sub	(char *, size_t, int, const char *);
 void	regex_init		(void);
