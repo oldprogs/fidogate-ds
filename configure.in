@@ -1,7 +1,7 @@
 #!/bin/sh
 dnl Process this file with autoconf to produce a configure script.
 dnl
-dnl $Id: configure.in,v 1.3 2003/09/27 01:18:03 rusfidogate Exp $
+dnl $Id: configure.in,v 1.4 2003/09/27 17:57:48 rusfidogate Exp $
 dnl
 dnl # Copy revision into the `configure' script
 AC_REVISION([$CVSid$])
@@ -589,8 +589,9 @@ AC_CHECK_FUNCS(gettimeofday memchr memset mkdir regcomp strcasecmp strchr)
 AC_CHECK_FUNCS(strerror strncasecmp strpbrk strrchr strspn strstr utime)
 
 HOSTNAME=`hostname -s`
-DOMAINNAME=`hostname|sed -e 's/$HOSTNAME//'`
+DOMAINNAME=`hostname|sed -e "s/$HOSTNAME//"`
 AC_SUBST(HOSTNAME)
+AC_SUBST(DOMAINNAME)
 
 AC_CONFIG_COMMANDS([build_headers],[build/subst.pl -h])
 
