@@ -1,5 +1,5 @@
 
-  $Id: README.ru,v 1.15 2004/06/06 01:31:11 rusfidogate Exp $
+  $Id: README.ru,v 1.16 2004/07/01 23:24:48 anray Exp $
 
 
    Copyright (C) 2001-2002, Dmitry Fedotov
@@ -2235,3 +2235,9 @@ FTN:	2:5020/1838
 
 FTN:	2:5030/1229
 E-mail:	dyff@fidogate.spb.ru
+
+Авторы ds-ветки Andrey Slusar и Alexandr Dobroslavskiy. Все патчи, жалобы,
+предложения, пожелания по ней следует слать по адресам:
+
+FTN:	2:467/126, 2:5020/1356
+E-mail: anray@users.sf.net, dsas@users.sf.net
