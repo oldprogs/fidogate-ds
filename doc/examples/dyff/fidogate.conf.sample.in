@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.11 2004/05/28 18:16:32 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.12 2004/05/29 19:09:20 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -9,7 +9,7 @@
 # C O M M O N   C O N F I G U R A T I O N                                    #
 ##############################################################################
 
-# Пути к основным каталогам
+# Paths to basic dirs
 #
 CONFIGDIR	<CONFIGDIR>
 BINDIR		<BINDIR>
@@ -156,7 +156,7 @@ Zone	6	.fidonet.org		fidonet		out.006
 AreaFixMailer	<SENDMAIL> -t
 
 # CC of reply mails
-AreaFixCc	postmaster@corex.izhora.spb.ru
+AreaFixCc	postmaster@<DOMAINNAME>
 
 # Location of help file
 AreaFixHelp	%C/areafix.help
