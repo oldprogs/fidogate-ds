@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: ftnafutil.c,v 1.5 2004/07/10 19:43:39 anray Exp $
+ * $Id: ftnafutil.c,v 1.6 2004/07/21 23:51:48 anray Exp $
  *
  * Utility program for Areafix.
  *
@@ -36,7 +36,7 @@
 
 
 #define PROGRAM		"ftnafutil"
-#define VERSION		"$Revision: 1.5 $"
+#define VERSION		"$Revision: 1.6 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 
@@ -144,7 +144,7 @@ void rm_group(char *area, Node *uplink)
 	    debug(7, "Found: %s stat = %s, have %d article", p->group, p->flag,
 		    p->art_h-p->art_l);
 #else
-	    debug(7, "Found: %s stat = %s, have %d article", p->group, p->flag);
+	    debug(7, "Found: %s stat = %s", p->group, p->flag);
 #endif
 	    if ( cf_get_string("AutoRemoveNG", TRUE) )
 	    {
