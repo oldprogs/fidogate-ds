@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.15 2004/06/30 17:34:48 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.16 2004/10/15 18:20:03 anray Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -242,6 +242,10 @@ FStatusAreaFixList
 ##############################################################################
 # T O S S E R   C O N F I G U R A T I O N                                    #
 ##############################################################################
+#
+# Empty passwords in incoming packets is allowed
+#
+#AllowEmptyPwd
 
 # Toss process (runtoss, rununpack):
 #
