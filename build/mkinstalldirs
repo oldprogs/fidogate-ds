@@ -4,7 +4,7 @@
 # Created: 1993-05-16
 # Public domain
 
-# $Id: mkinstalldirs,v 1.30 2004/10/15 18:20:03 anray Exp $
+# $Id: mkinstalldirs,v 1.31 2004/11/21 01:52:10 anray Exp $
 
 errstatus=0
 
