@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.8 2004/02/15 23:55:35 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.9 2004/04/15 18:23:50 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -586,12 +586,11 @@ Errors-To		dyff@corex.izhora.spb.ru
 #
 #                       area chars	newsgroup chars
 #			----------	---------------
-AreasXlate              &               -
-AreasXlate              $               -
-AreasXlate              '               -
-AreasXlate              _               -
-AreasXlate              /               -
-AreasXlate              |               -
+AreasXlate              &               \&
+AreasXlate              $               \$
+AreasXlate              '               \'
+AreasXlate              /               \/
+AreasXlate              |               \|
 
 # NOTE 1: real gateways should *not* disable FSC0035/47 kludges, the
 #         From: line is obsoleted by both ^ARFC-Xxxx kludges and
