@@ -1,5 +1,5 @@
 #
-# $Id: fidogate.conf.sample.in,v 1.9 2004/04/15 18:23:50 rusfidogate Exp $
+# $Id: fidogate.conf.sample.in,v 1.10 2004/05/08 13:01:09 rusfidogate Exp $
 #
 # NEW!!! (FIDOGATE 5.2.0ds) single common config file
 #
@@ -440,10 +440,13 @@ AutoCreateFechoPath /home/ftp/fileecho
 PassthroughtBoxesDir %B/fbox
 
 # Time in hour to wait file if it missing, if tick file was resived
-TickWaitHour 168
+TickWaitHour 48
 
 # Action if time limit was finished ("delete" or "bad")
 TickWaitAction	delete
+
+# Action
+TickFileAction UNIXFTN *.bz2 /usr/lib/fidogate/bin/scriptfilearea %s
 
 # Kill dupe tick's with correspod file
 #KillTickDupe
