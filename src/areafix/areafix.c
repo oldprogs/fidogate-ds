@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: areafix.c,v 1.11 2004/03/12 18:26:56 rusfidogate Exp $
+ * $Id: areafix.c,v 1.12 2004/03/19 19:50:15 rusfidogate Exp $
  *
  * Common Areafix functions
  *
@@ -1279,11 +1279,11 @@ int cmd_listall(Node *node)
 		    {
 			if(!*buf)
 			    continue;
-			f2 = xstrtok(str_upper(buf),  " \t");
+			f2 = xstrtok(buf,  " \t");
 			f1 = xstrtok(NULL,  "\n");
 
 			find = FALSE;
-			if(hi_test(f2))
+			if(hi_test(str_upper(f2)))
 			    find = TRUE;
 
 			if(!find)
