@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: rfc2ftn.c,v 1.12 2004/11/02 01:32:39 anray Exp $
+ * $Id: rfc2ftn.c,v 1.13 2004/11/07 19:12:02 anray Exp $
  *
  * Read mail or news from standard input and convert it to a FIDO packet.
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"rfc2ftn"
-#define VERSION 	"$Revision: 1.12 $"
+#define VERSION 	"$Revision: 1.13 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -115,6 +115,7 @@ static short dont_flush_dbc_history = FALSE;
 static int xpost_flag;			/* Crosspost flag */
 
 /* Charset stuff */
+static char *default_charset_in  = NULL;
 static char *default_charset_out = NULL;
 static char *netmail_charset_out = NULL;
 
@@ -1209,7 +1210,10 @@ int snd_message(Message *msg, Area *parea,
     /* MIME stuff and charset handling */
     if(mime->encoding && strieq(mime->encoding, "quoted-printable"))
 	mime_qp = MIME_QP;
-    cs_in   = CHARSET_STDRFC;
+    if(default_charset_in)
+	cs_in = default_charset_in;
+    else
+	cs_in = CHARSET_STDRFC;
     cs_save = NULL;
     cs_out  = NULL;
     if(mime->type_charset)
@@ -2333,6 +2337,7 @@ int main(int argc, char **argv)
 	debug(8, "config: DefaultCharset %s", p);
 	strtok(p, ":");
 	default_charset_out = strtok(NULL, ":");
+	default_charset_in  = strtok(NULL, ":");
     }
     if( (p = cf_get_string("NetMailCharset", TRUE)) )
     {
