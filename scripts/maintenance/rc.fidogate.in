@@ -1,0 +1,13 @@
+#!<SHELL>
+#
+# $Id: rc.fidogate.in,v 1.1 2003/09/23 17:37:01 rusfidogate Exp $
+#
+# FIDOGATE boot cleanup
+#
+
+# Remove lock files
+rm -f <LOCKDIR>/*
+
+# Remove .tmp files
+rm -f <SPOOLDIR>/outpkt/*.tmp <SPOOLDIR>/outpkt/*/*.tmp
+rm -f <SPOOLDIR>/toss/*/*.tmp
