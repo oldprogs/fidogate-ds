@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway software UNIX <-> FIDO
  *
- * $Id: rfc2ftn.c,v 5.6 2007/01/30 20:07:33 anray Exp $
+ * $Id: rfc2ftn.c,v 5.7 2007/09/12 16:59:58 anray Exp $
  *
  * Read mail or news from standard input and convert it to a FIDO packet.
  *
@@ -39,7 +39,7 @@
 
 
 #define PROGRAM 	"rfc2ftn"
-#define VERSION 	"$Revision: 5.6 $"
+#define VERSION 	"$Revision: 5.7 $"
 #define CONFIG		DEFAULT_CONFIG_GATE
 
 
@@ -1469,7 +1469,7 @@ again:
 	    /* Generate FSC-0035 ^AREPLYADDR, ^AREPLYTO */
 	    pt = xlat_s(s_rfcaddr_to_asc(&rfc_from, FALSE), pt);
 	    if(replyaddr_ifmail_tx)
-		fprintf(sf, "\001REPLYADDR %s <%s>\r\n", msg->name_from,
+		fprintf(sf, "\001REPLYADDR: %s <%s>\r\n", msg->name_from,
 			pt ? pt : s_rfcaddr_to_asc(&rfc_from, FALSE) );
 	    else
 		fprintf(sf, "\001REPLYADDR %s\r\n",
@@ -1481,7 +1481,7 @@ again:
 	    else
 #endif
 		if(replyaddr_ifmail_tx)
-		    fprintf(sf, "\001REPLYTO %s UUCP\r\n", znf1(cf_addr()));
+		    fprintf(sf, "\001REPLYTO: %s UUCP\r\n", znf1(cf_addr()));
 		else
 		    fprintf(sf, "\001REPLYTO %s %s\r\n", znf1(cf_addr()),
 			    msg->name_from);
