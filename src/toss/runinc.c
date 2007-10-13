@@ -2,7 +2,7 @@
 /*****************************************************************************
  * FIDOGATE --- Gateway UNIX Mail/News <-> FTN NetMail/EchoMail
  *
- * $Id: runinc.c,v 5.4 2007/01/17 22:45:57 anray Exp $
+ * $Id: runinc.c,v 5.5 2007/10/13 16:56:02 anray Exp $
  *
  * Processing inbound packets
  *
@@ -62,7 +62,7 @@
 #endif
 
 #define PROGRAM		"runinc"
-#define VERSION		"$Revision: 5.4 $"
+#define VERSION		"$Revision: 5.5 $"
 #define CONFIG		DEFAULT_CONFIG_MAIN
 
 void* subs(char *str,char *macro,char *expand);
@@ -337,13 +337,9 @@ Unpacking *unpacking_parse_line(char *buf1)
 	return NULL;
     }
 
-#ifdef HAVE_STRICMP
-    if(!stricmp(f ,"unarc"))
+    if(stricmp(f ,"unarc"))
 	return NULL;
-#else
-    if(strcasecmp(f ,"unarc"))
-	return NULL;
-#endif /* HAVE_STRICMP */
+
     /* Create new entry and put into list */
     r = (Unpacking *)xmalloc(sizeof(Unpacking));
     f = xstrtok(NULL, " \t");
